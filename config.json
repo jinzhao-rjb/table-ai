@@ -1,0 +1,13 @@
+{
+  "ai": {
+    "api_key": "sk-409742ab65c04561bb58b672749cb626",
+    "model": "qwen-vl-max",
+    "api_type": "qwen"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "task_db": 0,
+    "logic_db": 1
+  }
+}

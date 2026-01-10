@@ -1,0 +1,106 @@
+# Python
+*.pyc
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+
+# Virtual environments
+venv/
+env/
+.env/
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build files
+build/
+dist/
+*.whl
+*.tar.gz
+
+# Database files
+*.db
+*.sqlite3
+*.rdb
+
+# Output files
+output/
+outputs/
+*_output/
+*.xlsx
+*.csv
+*.xls
+
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tiff
+
+# Audio files
+*.mp3
+*.wav
+*.ogg
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.wmv
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.bz2
+*.gz
+
+# Model files (keep only the best.pt if needed)
+*.pt
+*.h5
+
+# Data directories
+data/
+database_*/
+databases/
+input_images/
+matched_images_excel/
+
+# Temporary directories
+temp_*/
+
+# Redis files
+redis/
+
+# Other
+crop_test.jpg
+ocr_extracted_result.xlsx
+output_test.xlsx
