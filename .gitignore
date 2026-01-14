@@ -48,15 +48,24 @@ dist/
 *.sqlite3
 *.rdb
 
-# Output files
+# Output files and directories
 output/
 outputs/
-*_output/
+
+# Model files (keep only the best.pt)
+*.pt
+*.h5
+!weights/best.pt
+
+# Redis files
+redis/
+
+# Large data files
 *.xlsx
 *.csv
 *.xls
 
-# Image files
+# Large image files
 *.jpg
 *.jpeg
 *.png
@@ -64,12 +73,10 @@ outputs/
 *.gif
 *.tiff
 
-# Audio files
+# Audio and video files
 *.mp3
 *.wav
 *.ogg
-
-# Video files
 *.mp4
 *.avi
 *.mov
@@ -82,25 +89,3 @@ outputs/
 *.tar
 *.tar.bz2
 *.gz
-
-# Model files (keep only the best.pt if needed)
-*.pt
-*.h5
-
-# Data directories
-data/
-database_*/
-databases/
-input_images/
-matched_images_excel/
-
-# Temporary directories
-temp_*/
-
-# Redis files
-redis/
-
-# Other
-crop_test.jpg
-ocr_extracted_result.xlsx
-output_test.xlsx
