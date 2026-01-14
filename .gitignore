@@ -1,91 +1,65 @@
-# Python
-*.pyc
+# =================================================================
+# Table-AI Project Standard .gitignore
+# =================================================================
+
+# --- 1. Python 基础与缓存 ---
 __pycache__/
-*.egg-info/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
 .pytest_cache/
 .mypy_cache/
-.dmypy.json
 
-# Virtual environments
-venv/
-env/
-.env/
+# --- 2. 核心模型权重 (最重要的：不在 GitHub) ---
+# 虽然本地 weights/ 里有 best.pt，但 GitHub 上只会看到一个空的 weights 文件夹
+*.pt
+*.pth
+*.weights
+*.onnx
+# 技巧：保留文件夹结构，但忽略内容
+!weights/
+!weights/.gitkeep
+
+# --- 3. 隐私与配置文件 (严禁上传) ---
+# 你的 API Key 就藏在这些文件里，绝对不能公开
+config.json
+.env
 .env.local
-.env.*.local
 
-# Logs
-*.log
-logs/
-
-# Temporary files
-*.tmp
-*.temp
-*.swp
-*.swo
-*~
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE files
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Build files
-build/
-dist/
-*.whl
-*.tar.gz
-
-# Database files
+# --- 4. 数据库文件 ---
 *.db
 *.sqlite3
 *.rdb
+# 如果你有本地 Redis 备份
+dump.rdb
 
-# Output files and directories
-output/
-outputs/
-
-# Model files (keep only the best.pt)
-*.pt
-*.h5
-!weights/best.pt
-
-# Redis files
-redis/
-
-# Large data files
+# --- 5. 本地开发产生的垃圾文件 (不在 GitHub) ---
+# 过滤你之前提到的那些测试生成的表格和图片
 *.xlsx
 *.csv
 *.xls
-
-# Large image files
+*.png
 *.jpg
 *.jpeg
-*.png
-*.bmp
-*.gif
-*.tiff
+!data/input/.gitkeep
+!data/output/.gitkeep
+crop_test.jpg
+ocr_extracted_result.xlsx
+output_test.xlsx
 
-# Audio and video files
-*.mp3
-*.wav
-*.ogg
-*.mp4
-*.avi
-*.mov
-*.wmv
+# --- 6. 编辑器与系统文件 ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
-# Archive files
-*.zip
-*.rar
-*.7z
-*.tar
-*.tar.bz2
-*.gz
+# --- 7. 临时与日志文件 ---
+*.log
+logs/
+.gradio/
+.cache/
+temp/
