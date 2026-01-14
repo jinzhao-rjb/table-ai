@@ -44,7 +44,7 @@ class RedisIntegratedProcessor:
         self.redis_client = self.dual_redis.task_conn
         
         # 初始化表格处理器和Qwen VL管理器
-        self.yolo_model_path = os.path.join(project_root, "runs/a4_table_lora_finetune2/weights/best.pt")
+        self.yolo_model_path = "D:\\office\\office-lazy-tool\\weights\\best.pt"
         self.table_processor = TableProcessor(self.yolo_model_path)
         self.qwen_manager = QwenVLManager(
             api_key=config_manager.get("ai.api_key", ""),
