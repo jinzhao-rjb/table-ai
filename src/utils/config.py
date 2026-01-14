@@ -28,7 +28,7 @@ class ConfigManager:
             },
             # 表格提取配置
             "table_extraction": {
-                "yolo_model_path": "runs/a4_table_lora_finetune2/weights/best.pt",
+                "yolo_model_path": "D:\\office\\office-lazy-tool\\weights\\best.pt",
                 "output_folder": "output",
                 "max_workers": 4
             },
