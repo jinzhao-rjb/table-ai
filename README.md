@@ -102,9 +102,6 @@ table-ai/
 │   ├── modules/          # Functional modules
 │   │   ├── ai_service.py            # AI service management
 │   │   ├── api_manager.py           # API request management
-│   │   ├── data_parser.py           # Data parsing and processing
-│   │   ├── file_manager.py          # File management and batch operations
-│   │   ├── image_tools.py           # Image processing tools
 │   │   ├── multi_column_processor.py # Multi-column table processing
 │   │   ├── prompt_generator.py      # AI prompt generation
 │   │   ├── qwen_vl_manager.py       # Qwen-VL API client
@@ -116,16 +113,12 @@ table-ai/
 │   │   ├── async_task_manager.py    # Asynchronous task management
 │   │   ├── config.py                # Configuration management
 │   │   ├── dual_redis_db.py         # Redis database management
-│   │   ├── format_matcher.py        # Format matching
-│   │   ├── format_options.py        # Format options
 │   │   ├── logger.py                # Log management
-│   │   ├── qwen_db.py               # Qwen database
-│   │   ├── qwen_db_sqlite.py        # SQLite database
-│   ├── check_redis_status.py        # Redis status checking
-│   ├── enqueue_tasks.py             # Task enqueuing
-│   ├── redis_integrated_main.py     # Redis integrated main program
-│   ├── run_full_html_pipeline.py    # HTML processing pipeline
-│   ├── table.yaml                   # Table configuration
+│   ├── scrips/ 
+│   |   ├── redis_integrated_main.py     # Redis integrated main program
+│   |   ├── table.yaml                   # Table configuration
+|   ├──weight/
+|   |   ├──readme.md                       #best.pt
 ├── main.py               # FastAPI backend service entry
 ├── gradio_app.py         # Gradio Web interface entry
 ├── config.json           # Configuration file
@@ -257,7 +250,6 @@ table-ai/
 |----------|------------|---------|---------|
 | Web Framework | FastAPI | - | Backend RESTful API service |
 | Visualization Framework | Gradio | - | Web interface interaction |
-| GUI Framework | PyQt5 | >=5.15.7 | Desktop application interface |
 
 ### Document Processing
 | Technology | Version | Purpose |
@@ -385,28 +377,6 @@ The interface will run at `http://localhost:7860`
 - **Before Optimization**: ~3 minutes per image
 - **After Optimization**: ~30 seconds per image (10x improvement)
 
-## 🧪 Testing
-
-### Run Unit Tests
-```bash
-python -m pytest
-```
-
-### Test Specific Modules
-```bash
-# Test table extraction
-python -m pytest test_table_extraction.py
-
-# Test Redis connection
-python -m pytest test_redis_connection.py
-
-# Test API configuration
-python -m pytest test_api_config.py
-
-# Test multi-column processor
-python -m pytest test_multi_column_processor.py
-```
-
 ## 🔄 Update Log
 
 ### v1.0.0 (2026-01-10)
@@ -415,7 +385,6 @@ python -m pytest test_multi_column_processor.py
 - ✅ Voice input support (Whisper+Qwen API)
 - ✅ 8-thread parallel processing
 - ✅ Batch result ZIP packaging
-- ✅ File batch renaming functionality
 - ✅ Vectorized function conversion
 - ✅ AST code security checking
 - ✅ Redis distributed processing
