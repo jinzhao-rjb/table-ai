@@ -20,12 +20,10 @@ venv/
 *.pth
 *.weights
 *.onnx
-# 技巧：保留文件夹结构，但忽略内容
 !weights/
 !weights/.gitkeep
 
 # --- 3. 隐私与配置文件 (严禁上传) ---
-# 你的 API Key 就藏在这些文件里，绝对不能公开
 config.json
 .env
 .env.local
