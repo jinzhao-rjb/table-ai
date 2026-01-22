@@ -409,11 +409,6 @@ Contributions to the project are welcome! Contribution process:
 
 This project adopts the MIT license, see the LICENSE file for details.
 
-## 📞 Contact Information
-
-- **GitHub**: [https://github.com/jinzhao-rjb/table-ai](https://github.com/jinzhao-rjb/table-ai)
-- **Issues**: [https://github.com/jinzhao-rjb/table-ai/issues](https://github.com/jinzhao-rjb/table-ai/issues)
-
 ## 🙏 Acknowledgments
 
 - **Whisper Model**: OpenAI's speech recognition model
