@@ -2,7 +2,7 @@
 
 Table AI is a powerful intelligent table processing system that provides two core functions: table data extraction from images and AI computation, supporting both FastAPI backend service and Gradio Web interface usage modes.
 
-## 📐 Architecture Diagram
+##  Architecture Diagram
 
 ```mermaid
 flowchart TD
@@ -61,7 +61,7 @@ flowchart TD
     F -.-> D
 ```
 
-## 🌟 Highlight: Self-Evolution Learning System
+##  Highlight: Self-Evolution Learning System
 
 Table AI features a unique self-evolution capability implemented in `src/modules/qwen_learning.py`, enabling the system to continuously improve its performance through historical data analysis and feedback loops.
 
@@ -92,7 +92,7 @@ Table AI features a unique self-evolution capability implemented in `src/modules
 
 This self-evolution capability sets Table AI apart from traditional OCR systems, allowing it to adapt and improve over time with minimal human intervention.
 
-## 📁 Project Structure
+##  Project Structure
 
 The core code of the project is located in the `src/` directory, containing functional modules and utility functions:
 
@@ -126,7 +126,7 @@ table-ai/
 └── README.md             # Project description
 ```
 
-## 🔗 Two Main Entry Points
+##  Two Main Entry Points
 
 ### 1. FastAPI Backend Service (`main.py`)
 - **Function**: Provides RESTful API interfaces, supporting file upload, task management and status query
@@ -148,7 +148,7 @@ table-ai/
   - Automatic ZIP packaging of results
 - **Technology Stack**: Gradio + Python
 
-## 🚀 Two Core Functions
+##  Two Core Functions
 
 ### 1. Intelligent Table Extraction System
 
@@ -221,7 +221,7 @@ table-ai/
 - Safe and reliable: AST code security checking
 - Easy to extend: supports custom functions
 
-## 🛠️ Auxiliary Functions
+##  Auxiliary Functions
 
 ### 1. Voice Input Support (`src/modules/voice_service.py`)
 - **Function**: Control the application through voice, supporting Chinese voice commands
@@ -243,7 +243,7 @@ table-ai/
 - **Technology**: Environment variables + configuration files
 - **Priority**: Environment variables > Configuration files > Default values
 
-## 🛠️ Detailed Technology Stack
+##  Detailed Technology Stack
 
 ### Core Framework
 | Category | Technology | Version | Purpose |
@@ -299,7 +299,7 @@ table-ai/
 | seaborn | >=0.12.2 | Statistical data visualization |
 | numpy | >=1.24.3 | Numerical computation |
 
-## 📋 System Requirements
+##  System Requirements
 
 - **Operating System**: Windows 10/11, Linux
 - **Python Version**: Python 3.10+
@@ -307,7 +307,7 @@ table-ai/
 - **Storage**: 500MB available space
 - **Optional**: Redis server (for distributed processing)
 
-## 🛠️ Installation and Deployment
+##  Installation and Deployment
 
 ### 1. Clone the Project
 ```bash
@@ -347,7 +347,7 @@ Edit the `config.json` file, set related parameters:
 }
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Method 1: Start FastAPI Backend Service
 ```bash
@@ -361,7 +361,7 @@ python gradio_app.py
 ```
 The interface will run at `http://localhost:7860`
 
-## 📊 Performance Optimization
+##  Performance Optimization
 
 ### Optimization Measures
 1. **Image Size Limitation**: Max 1536px, reduce AI inference time
@@ -377,7 +377,7 @@ The interface will run at `http://localhost:7860`
 - **Before Optimization**: ~3 minutes per image
 - **After Optimization**: ~30 seconds per image (10x improvement)
 
-## 🔄 Update Log
+##  Update Log
 
 ### v1.0.0 (2026-01-10)
 - ✅ Intelligent table extraction functionality
@@ -395,7 +395,7 @@ The interface will run at `http://localhost:7860`
 - ✅ YOLO model integration
 - ✅ Multi-column table processing
 
-## 🤝 Contribution
+##  Contribution
 
 Contributions to the project are welcome! Contribution process:
 
@@ -405,11 +405,11 @@ Contributions to the project are welcome! Contribution process:
 4. Push to the branch: `git push origin feature/your-feature`
 5. Create a Pull Request
 
-## 📄 License
+##  License
 
 This project adopts the MIT license, see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Whisper Model**: OpenAI's speech recognition model
 - **Qwen-VL**: Alibaba Cloud's vision-language model
